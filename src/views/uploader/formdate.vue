@@ -96,9 +96,8 @@ export default {
         ctx.fillRect(0,0,targetWidth,targetHeight);
         ctx.drawImage(img,0,0,targetWidth,targetHeight);
 
-
         that.uur = canvas.toDataURL(input.type || 'image/png');
-        console.log(that.uur);
+
       }
     }
   }
