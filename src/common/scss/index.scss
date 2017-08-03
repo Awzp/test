@@ -1,0 +1,69 @@
+@import './core/index';
+@import './core/reset';
+
+html{
+	height: 100%;
+}
+
+body,#eidt-wrap{
+	height: 100%;
+	min-height: 100%;
+}
+
+.top-in{
+	animation:fadeInDown 1s .2s ease both;
+}
+@keyframes fadeInDown{
+	0%{opacity:0;
+	transform:translateY(-20px)}
+	100%{opacity:1;
+	transform:translateY(0)}
+}
+.left-in{
+	animation:fadeInLeft 1s .2s ease both;
+}
+@keyframes fadeInLeft{
+	0%{opacity:0;
+	transform:translateX(-20px)}
+	100%{opacity:1;
+	transform:translateX(0)}
+	}
+.right-in{
+	animation:fadeInRight 1s .2s ease both;
+}
+@keyframes fadeInRight{
+	0%{opacity:0;
+	transform:translateX(20px)}
+	100%{opacity:1;
+	transform:translateX(0)}
+	}
+.routate-out{
+	animation:rotateOut 1s .2s ease both!important;
+}
+@keyframes rotateOut{
+	0%{transform:rotate(0);
+	opacity:1}
+	100%{transform:rotate(-360deg);
+	opacity:0}
+}
+.rotate-in{
+	animation:rotateIn 1s .2s ease both;
+}
+@keyframes rotateIn{
+	0%{transform-origin:center center;
+	transform:rotate(-200deg);
+	opacity:0}
+	100%{transform-origin:center center;
+	transform:rotate(0);
+	opacity:1}
+}
+.qiuqian{
+	animation:tada 1s .2s ease both;
+}
+@keyframes tada{
+	0%{transform:scale(1)}
+	10%,20%{transform:scale(0.9) rotate(-3deg)}
+	30%,50%,70%,90%{transform:scale(1.1) rotate(3deg)}
+	40%,60%,80%{transform:scale(1.1) rotate(-3deg)}
+	100%{transform:scale(1) rotate(0)}
+}
