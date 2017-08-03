@@ -1,8 +1,8 @@
 {
-  "name": "heiheihei",
+  "name": "ooo",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "王卫新 <wangweixin@moxiu.net>",
+  "author": "",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
