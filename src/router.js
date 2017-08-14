@@ -99,6 +99,11 @@ const routes = [
         path:'/canvas/zhihu',
         component: resolve => require(['./views/canvas/test/zhihu.vue'], resolve)
       },
+      {
+        name:'小星星',
+        path:'/canvas/start',
+        component: resolve => require(['./views/canvas/test/start.vue'], resolve)
+      },
       // {
       //   name:'path2d',
       //   path:'/canvas/path2d',
@@ -118,6 +123,24 @@ const routes = [
     type:'category',
     name:'上传',
     component: resolve => require(['./views/uploader/formdate'], resolve)
+  },
+  {
+    path:'/cssimg/main',
+    type:'category',
+    name:'css图片处理',
+    children:[
+      {
+        name:'main',
+        path:'/cssimg/main',
+        component: resolve => require(['./views/cssI/main'], resolve)
+      },
+      {
+        name:'png赋色',
+        path:'/cssimg/pngtran',
+        component: resolve => require(['./views/cssI/csstest/pngTran'], resolve)
+      },
+    ],
+    component: resolve => require(['./views/cssI/index.vue'], resolve)
   },
 ]
 

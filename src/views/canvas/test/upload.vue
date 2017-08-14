@@ -16,13 +16,9 @@ export default {
       const that = this;
       this.drawCanvas();
       let ctx = this.ctx;
-      var drawCir = new Path2D();
-      drawCir.rect(30,30,30,30);
-      var c = new Path2D();
-      c.arc(100,100,30,Math.PI*2,0)
-      ctx.fill(drawCir);
-      ctx.fill(c);
-
+      ctx.save();
+      ctx.translate(200,200);
+      
     })
   },
   methods: {

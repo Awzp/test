@@ -37,13 +37,13 @@ export default {
       }
       function clear() {
         ctx.fillStyle = 'rgba(255,255,255,.4)';
-        ctx.fillRect(0,0,canvas.width,canvas.height);
+        ctx.clearRect(0,0,canvas.width,canvas.height);
       }
       function draw() {
         // ctx.clearRect(0,0,window.innerWidth,window.innerHeight);
         ctx.save();
         ctx.fillStyle = 'rgba(255,255,255,.4)';
-        ctx.fillRect(0,0,canvas.width,canvas.height);
+        ctx.clearRect(0,0,canvas.width,canvas.height);
         ctx.restore();
         ball.draw();
         ball.x += ball.vx;
